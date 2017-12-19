@@ -1,7 +1,7 @@
 const _ = require('underscore');
 const {promisify} = require('util');
 const fs = require('fs');
-const path = require('path');
+const path = require('npath');
 
 const AsyncFunction = Object.getPrototypeOf(async () => {}).constructor;
 
@@ -17,7 +17,7 @@ const resolve = async ({file, links, options: {data, templateSettings}}) => {
 
   const dir = path.dirname(file.path);
   const include = async (link, data) => {
-    link = path.relative('.', path.resolve(dir, link));
+    if (link[0] === '.') link = path.relative('.', path.resolve(dir, link));
     links.push(link);
     return resolve({
       file: {buffer: await readFile(link), path: link},

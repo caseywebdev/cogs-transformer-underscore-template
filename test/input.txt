@@ -7,6 +7,6 @@ Include:
 <%= await obj.include('./include.txt') %>
 
 Include2:
-<%= await obj.include('./include2.txt') %>
+<%= await obj.include('test/include2.txt') %>
 
 Sum of 1 + 2 = <%= obj.sum(1, 2) %>
