@@ -9,4 +9,7 @@ Include:
 Include2:
 <%= await obj.include('test/include2.txt') %>
 
+ReadFile:
+<%= await obj.readFile('test/readfile.txt') %>
+
 Sum of 1 + 2 = <%= obj.sum(1, 2) %>

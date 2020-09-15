@@ -1,19 +1,19 @@
 {
   "name": "cogs-transformer-underscore-template",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "author": "Casey Foster <c@sey.me>",
   "description": "An underscore template transformer for Cogs.",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/caseywebdev/cogs-transformer-underscore-template"
   },
   "dependencies": {
-    "npath": "1",
     "underscore": "1"
   },
   "devDependencies": {
-    "cogs-test-helper": "3"
+    "cogs-test-helper": "4"
   },
   "scripts": {
     "test": "cogs-test-helper test/test.js"

@@ -11,4 +11,8 @@ Include2:
 I'm the other include!
 
 
+ReadFile:
+<% Literal %>
+
+
 Sum of 1 + 2 = 3

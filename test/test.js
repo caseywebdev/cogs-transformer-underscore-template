@@ -1,6 +1,6 @@
-const helper = require('cogs-test-helper');
+import helper from 'cogs-test-helper';
 
-helper.run({
+export default helper.createTests({
   'test/config.js': {
     'test/input.txt': helper.getFileBuffer('test/output.txt'),
     'test/error.txt': Error
